@@ -8,7 +8,6 @@ export const authFunk = () => {
   const modal = document.getElementById("auth-modal");
   const closeBtns = modal.querySelectorAll(".close-btn");
   const loginBtn = modal.querySelector(".login-btn");
-  const cartModal = document.getElementById('cart-modal');
 
   const login = () => {
     authBtn.classList.add("d-none");
@@ -74,10 +73,6 @@ export const authFunk = () => {
     localStorage.removeItem("auth");
 
     logout();
-  });
-
-  openCartBtn.addEventListener('click', () => {
-    openModal(cartModal);
   });
 
   checkAuth();
